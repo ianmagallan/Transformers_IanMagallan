@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Transformers</string>
+    <string name="generic_error_title">Error</string>
+    <string name="generic_ok">Ok</string>
+    <string name="generic_affirmative">Yes</string>
+    <string name="generic_negative">No</string>
+    <string name="server_error_message">Server error</string>
+    <string name="generic_delete">Delete</string>
+    <string name="dialog_delete_message">Do you want to delete the current transformer?</string>
+    <string name="manage_mandatory_name">Name is mandatory</string>
+    <string name="main_button_fight">Fight</string>
+    <string name="error_attributes">Attributes must be between 1 and 10</string>
+</resources>

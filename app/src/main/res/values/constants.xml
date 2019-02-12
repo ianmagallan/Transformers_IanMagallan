@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rb_default">5</integer>
+    <integer name="rb_min">0</integer>
+    <integer name="rb_max">10</integer>
+    <string name="rb_default">5</string>
+</resources>

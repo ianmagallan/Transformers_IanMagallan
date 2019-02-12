@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/add_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/add_et_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_name" />
+
+        <TextView
+            android:id="@+id/add_tv_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Strength"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_et_name" />
+
+        <SeekBar
+            android:id="@+id/add_sb_strength"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:progress="@integer/rb_default"
+            android:max="@integer/rb_max"
+            android:min="@integer/rb_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_strength" />
+
+        <TextView
+            android:id="@+id/add_tv_intelligence"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Intelligence"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_strength" />
+
+        <SeekBar
+            android:id="@+id/add_sb_intelligence"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:progress="@integer/rb_default"
+            android:max="@integer/rb_max"
+            android:min="@integer/rb_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_intelligence" />
+
+        <TextView
+            android:id="@+id/add_tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Speed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_intelligence" />
+
+        <SeekBar
+            android:id="@+id/add_sb_speed"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:progress="@integer/rb_default"
+            android:max="@integer/rb_max"
+            android:min="@integer/rb_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_speed" />
+
+        <TextView
+            android:id="@+id/add_tv_endurance"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Endurance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_speed" />
+
+        <SeekBar
+            android:id="@+id/add_sb_endurance"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:progress="@integer/rb_default"
+            android:max="@integer/rb_max"
+            android:min="@integer/rb_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_endurance" />
+
+        <TextView
+            android:id="@+id/add_tv_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Rank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_endurance" />
+
+        <SeekBar
+            android:id="@+id/add_sb_rank"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:progress="@integer/rb_default"
+            android:max="@integer/rb_max"
+            android:min="@integer/rb_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_rank" />
+
+        <TextView
+            android:id="@+id/add_tv_courage"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Courage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_rank" />
+
+        <SeekBar
+            android:id="@+id/add_sb_courage"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:progress="@integer/rb_default"
+            android:max="@integer/rb_max"
+            android:min="@integer/rb_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_courage" />
+
+        <TextView
+            android:id="@+id/add_tv_firepower"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Firepower"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_courage" />
+
+        <SeekBar
+            android:id="@+id/add_sb_firepower"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:progress="@integer/rb_default"
+            android:max="@integer/rb_max"
+            android:min="@integer/rb_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_firepower" />
+
+        <TextView
+            android:id="@+id/add_tv_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Skill"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_firepower" />
+
+        <SeekBar
+            android:id="@+id/add_sb_skill"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:progress="@integer/rb_default"
+            android:max="@integer/rb_max"
+            android:min="@integer/rb_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_skill" />
+
+        <TextView
+            android:id="@+id/add_tv_team"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Team"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_skill" />
+
+        <RadioGroup
+            android:id="@+id/add_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:checkedButton="@id/add_rb_autobot"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv_team">
+
+            <RadioButton
+                android:id="@+id/add_rb_autobot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Autobot" />
+
+            <RadioButton
+                android:id="@+id/add_rb_decepticon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="Decepticon" />
+        </RadioGroup>
+
+
+        <!-- Counters -->
+        <TextView
+            android:id="@+id/add_tv_strength_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rb_default"
+            app:layout_constraintStart_toEndOf="@+id/add_tv_strength"
+            app:layout_constraintTop_toBottomOf="@+id/add_et_name" />
+
+        <TextView
+            android:id="@+id/add_tv_intelligence_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rb_default"
+            app:layout_constraintStart_toEndOf="@+id/add_tv_intelligence"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_strength" />
+
+        <TextView
+            android:id="@+id/add_tv_speed_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rb_default"
+            app:layout_constraintStart_toEndOf="@+id/add_tv_speed"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_intelligence" />
+
+        <TextView
+            android:id="@+id/add_tv_endurance_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rb_default"
+            app:layout_constraintStart_toEndOf="@+id/add_tv_endurance"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_speed" />
+
+        <TextView
+            android:id="@+id/add_tv_rank_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rb_default"
+            app:layout_constraintStart_toEndOf="@+id/add_tv_rank"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_endurance" />
+
+        <TextView
+            android:id="@+id/add_tv_courage_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rb_default"
+            app:layout_constraintStart_toEndOf="@+id/add_tv_courage"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_rank" />
+
+        <TextView
+            android:id="@+id/add_tv_firepower_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rb_default"
+            app:layout_constraintStart_toEndOf="@+id/add_tv_firepower"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_courage" />
+
+        <TextView
+            android:id="@+id/add_tv_skill_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rb_default"
+            app:layout_constraintStart_toEndOf="@+id/add_tv_skill"
+            app:layout_constraintTop_toBottomOf="@+id/add_sb_firepower" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
